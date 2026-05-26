@@ -52,3 +52,4 @@ prisma/*.db
 # Uploaded files (user content, not source code)
 /public/uploads/*
 !/public/uploads/.gitkeep
+.claude/
