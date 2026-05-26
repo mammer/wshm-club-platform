@@ -1,0 +1,144 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "players": "Joueurs",
+    "scores": "Scores & Classement",
+    "blog": "Actualités",
+    "gallery": "Galerie",
+    "tournament": "Tournois",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "الوفاق الرياضي الحسني لمداغ",
+    "subtitle": "Association Sportive fondée en 1956 à Madagh, Maroc",
+    "cta_players": "Nos Joueurs",
+    "cta_scores": "Voir les Scores"
+  },
+  "stats": {
+    "players": "Joueurs Actifs",
+    "years": "Ans d'Histoire",
+    "categories": "Catégories"
+  },
+  "sections": {
+    "latest_scores": "Derniers Résultats",
+    "latest_news": "Dernières Actualités",
+    "gallery_preview": "Galerie Photos",
+    "tournament_cta": "Tournoi d'Été",
+    "tournament_open": "Les inscriptions sont ouvertes !",
+    "register_now": "S'inscrire maintenant"
+  },
+  "players": {
+    "title": "Nos Joueurs",
+    "all": "Tous",
+    "minimes": "Minimes",
+    "cadets": "Cadets",
+    "juniors": "Juniors",
+    "seniors": "Seniors",
+    "position": "Poste",
+    "jersey": "N°",
+    "license": "Licence",
+    "born": "Né le",
+    "phone": "Téléphone",
+    "no_players": "Aucun joueur dans cette catégorie."
+  },
+  "scores": {
+    "title": "Scores & Classement",
+    "results": "Résultats",
+    "standings": "Classement",
+    "date": "Date",
+    "home": "Domicile",
+    "away": "Extérieur",
+    "score": "Score",
+    "competition": "Compétition",
+    "rank": "Cl.",
+    "team": "Équipe",
+    "played": "J",
+    "won": "G",
+    "draw": "N",
+    "lost": "P",
+    "gf": "BP",
+    "ga": "BC",
+    "gd": "DB",
+    "points": "Pts",
+    "no_matches": "Aucun résultat disponible.",
+    "championnat": "Championnat",
+    "coupe": "Coupe",
+    "amical": "Match amical"
+  },
+  "blog": {
+    "title": "Actualités",
+    "read_more": "Lire la suite",
+    "published": "Publié le",
+    "by": "par",
+    "no_posts": "Aucun article disponible."
+  },
+  "gallery": {
+    "title": "Galerie Photos",
+    "all": "Toutes",
+    "no_photos": "Aucune photo disponible."
+  },
+  "tournament": {
+    "title": "Tournois",
+    "register": "S'inscrire",
+    "deadline": "Date limite",
+    "date": "Date du tournoi",
+    "categories": "Catégories",
+    "closed": "Inscriptions fermées",
+    "form": {
+      "club_name": "Nom du club",
+      "contact_name": "Nom du responsable",
+      "contact_phone": "Téléphone",
+      "contact_email": "Email (optionnel)",
+      "category": "Catégorie",
+      "player_count": "Nombre de joueurs",
+      "submit": "Envoyer l'inscription",
+      "success": "Inscription envoyée ! Nous vous contacterons bientôt.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "no_tournaments": "Aucun tournoi en cours."
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité & Cookies",
+    "cookies_banner": "Ce site utilise des cookies essentiels au bon fonctionnement. En continuant, vous acceptez leur utilisation.",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  },
+  "footer": {
+    "address": "Madagh, Province de Berkane, Maroc",
+    "rights": "Tous droits réservés",
+    "founded": "Fondé en 1956",
+    "nav_title": "Navigation",
+    "legal_title": "Légal",
+    "privacy": "Politique de confidentialité"
+  },
+  "about": {
+    "title": "À propos de W.S.H.M",
+    "subtitle": "Une histoire de passion et de fierté depuis 1956",
+    "description": "Le Wefak Sportif Hassanyat Madagh est une association sportive fondée en 1956 dans la ville de Madagh, Province de Berkane, au nord-est du Maroc. Depuis plus de six décennies, le club est un pilier du sport et de la vie communautaire dans la région de l'Oriental, formant des générations de footballeurs et portant haut les couleurs de Madagh sur les terrains régionaux et nationaux.",
+    "history_title": "Notre Histoire",
+    "history": "Né en 1956 au cœur de Madagh, le W.S.H.M a traversé les décennies en restant fidèle à ses valeurs fondatrices : le sport comme vecteur de cohésion sociale, de discipline et d'épanouissement personnel. Le club a su s'adapter aux évolutions du football marocain tout en préservant son identité locale et sa proximité avec les familles de la région.",
+    "mission_title": "Notre Mission",
+    "mission": "Former et développer les joueurs de football de toutes les tranches d'âge — des Minimes aux Séniors — promouvoir les valeurs sportives d'excellence, de respect et de solidarité, et représenter fièrement la ville de Madagh dans les compétitions régionales et nationales. Nous aspirons à faire du club un acteur central du développement du sport dans l'Oriental.",
+    "vision_title": "Notre Vision",
+    "vision": "Devenir un club de référence dans l'Oriental marocain, reconnu pour la qualité de sa formation, la transparence de sa gestion et son ancrage dans la communauté. Nous voulons que chaque enfant de Madagh et des environs puisse trouver dans notre club un environnement bienveillant pour grandir, apprendre et s'épanouir à travers le football.",
+    "values_title": "Nos Valeurs",
+    "values": "Respect, Solidarité, Excellence, Persévérance, Transparence, Ancrage local",
+    "categories_title": "Nos Catégories",
+    "categories_desc": "Le club accueille des joueurs dans quatre catégories d'âge, avec un encadrement adapté à chaque tranche :",
+    "cat_minimes": "Minimes (U13)",
+    "cat_minimes_desc": "Initiation au football, apprentissage des fondamentaux techniques et de l'esprit d'équipe.",
+    "cat_cadets": "Cadets (U15)",
+    "cat_cadets_desc": "Perfectionnement technique et tactique, premières compétitions officielles.",
+    "cat_juniors": "Juniors (U17–U19)",
+    "cat_juniors_desc": "Préparation au football adulte, compétitions régionales intensives.",
+    "cat_seniors": "Séniors",
+    "cat_seniors_desc": "Équipe première représentant le club dans le championnat provincial et la coupe régionale.",
+    "org_title": "Notre Organisation",
+    "org_desc": "Le club est géré par un bureau directeur élu, assisté de commissions spécialisées (technique, financière, communication). Nous nous engageons pour une gestion transparente et participative, avec des assemblées générales régulières ouvertes à tous les membres.",
+    "contact_title": "Nous Contacter",
+    "contact_location": "Stade Municipal de Madagh, Province de Berkane",
+    "contact_phone": "+212 6XX-XXXXXX",
+    "contact_email": "contact@wshm.ma"
+  }
+}
