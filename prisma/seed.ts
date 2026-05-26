@@ -1,3 +1,6 @@
+// ⚠️  DEV / DEMO SEED — these are placeholder passwords for local development only.
+// Run `npx tsx scripts/seed-admin.ts` on production to create real accounts,
+// then change all passwords immediately via /admin/profile.
 import { PrismaClient } from "../src/generated/prisma";
 import bcrypt from "bcryptjs";
 

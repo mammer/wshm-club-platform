@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# W.S.H.M — Wefak Sportif Hassanyat Madagh
 
-## Getting Started
+Site officiel du club de football **Wefak Sportif Hassanyat Madagh**, fondé en 1956 à Madagh, Province de Berkane, Maroc.
 
-First, run the development server:
+## Stack
+
+| Layer | Tech |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Database | MySQL (prod) / SQLite (dev) via Prisma 5 |
+| Auth | NextAuth.js v5 |
+| Styling | Tailwind CSS v4 |
+| i18n | next-intl — Français + العربية (RTL) |
+| Rich text | Tiptap |
+| Hosting | PlanetHoster World (Node.js + MySQL) |
+
+## Getting started
 
 ```bash
+git clone https://github.com/your-org/wshmadagh.git
+cd wshmadagh
+npm install
+cp .env.example .env   # then fill in your values
+npx prisma generate
+npx prisma db push
+npx tsx scripts/seed-admin.ts
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Public site → http://localhost:3000/fr
+- Admin panel → http://localhost:3000/admin
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Role | Access |
+|---|---|
+| ADMIN | Everything |
+| SECRETARY | All except users / audit / settings |
+| COACH | Players, coaches, attendance, scores |
+| AUTHOR | Blog, gallery |
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+See [DEPLOY.md](./DEPLOY.md) for the full PlanetHoster World Panel guide.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See [.env.example](./.env.example) — copy to `.env` and fill in real values before running.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Club: Madagh, Province de Berkane, Maroc · Fondé: 1956
