@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Prisma generated client (rebuilt with `npx prisma generate`)
+/src/generated/
+/app/generated/
+
+# SQLite dev database
+prisma/prisma/dev.db
+prisma/*.db
+*.db
+
+# Uploaded files (user content, not source code)
+/public/uploads/*
+!/public/uploads/.gitkeep
