@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Menu, X, Lock } from "lucide-react";
+import { IconMenu2 as Menu, IconX as X, IconLock as Lock } from "@tabler/icons-react";
 
 export default function Navbar({ locale }: { locale: string }) {
   const t = useTranslations("nav");

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { Eye, EyeOff, Lock, User, Shield, ChevronRight } from "lucide-react";
+import { IconEye as Eye, IconEyeOff as EyeOff, IconLock as Lock, IconUser as User, IconShield as Shield, IconChevronRight as ChevronRight } from "@tabler/icons-react";
 
 const STAGES = [
   "Vérification des identifiants…",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { MapPin, Lock } from "lucide-react";
+import { IconMapPin as MapPin, IconLock as Lock } from "@tabler/icons-react";
 
 export default async function Footer({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: "footer" });

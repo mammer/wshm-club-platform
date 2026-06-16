@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
-import { Plus, CheckCircle, XCircle, Clock, ToggleLeft, ToggleRight, X, Phone, Mail, Users, MapPin, User, ShieldCheck } from "lucide-react";
+import { IconPlus as Plus, IconCircleCheck as CheckCircle, IconCircleX as XCircle, IconClock as Clock, IconToggleLeft as ToggleLeft, IconToggleRight as ToggleRight, IconX as X, IconPhone as Phone, IconMail as Mail, IconUsers as Users, IconMapPin as MapPin, IconUser as User, IconShieldCheck as ShieldCheck } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

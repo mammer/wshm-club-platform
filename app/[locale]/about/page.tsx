@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { MapPin, Phone, Mail, Target, Eye, Heart } from "lucide-react";
+import { IconMapPin as MapPin, IconPhone as Phone, IconMail as Mail, IconTarget as Target, IconEye as Eye, IconHeart as Heart } from "@tabler/icons-react";
 
 export default async function AboutPage({
   params,

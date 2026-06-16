@@ -5,13 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import { signOut, useSession } from "next-auth/react";
-import {
-  LayoutDashboard, Users, UserCog, Trophy, CalendarDays,
-  CreditCard, Flag, Newspaper, Images, Menu, X, LogOut,
-  Calendar, Building2, ClipboardList, Shield, Receipt,
-  Settings, Users2, FolderArchive, ChevronDown, UserCheck,
-  PanelLeftClose, PanelLeftOpen,
-} from "lucide-react";
+import { IconLayoutDashboard as LayoutDashboard, IconUsers as Users, IconUserCog as UserCog, IconTrophy as Trophy, IconCalendarEvent as CalendarDays, IconCreditCard as CreditCard, IconFlag as Flag, IconNews as Newspaper, IconPhoto as Images, IconMenu2 as Menu, IconX as X, IconLogout as LogOut, IconCalendar as Calendar, IconBuilding as Building2, IconClipboardList as ClipboardList, IconShield as Shield, IconReceipt as Receipt, IconSettings as Settings, IconUsersGroup as Users2, IconArchive as FolderArchive, IconChevronDown as ChevronDown, IconUserCheck as UserCheck, IconLayoutSidebarLeftCollapse as PanelLeftClose, IconLayoutSidebarLeftExpand as PanelLeftOpen } from "@tabler/icons-react";
 import { ALLOWED_NAV } from "@/lib/roles";
 
 type NavItem = { href: string; labelFr: string; labelAr: string; icon: React.ElementType };

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
-import { Settings, Save, Trophy } from "lucide-react";
+import { IconSettings as Settings, IconDeviceFloppy as Save, IconTrophy as Trophy } from "@tabler/icons-react";
 
 type SettingsData = Record<string, string>;
 

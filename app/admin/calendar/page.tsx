@@ -2,11 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { swal } from "@/lib/swal";
-import {
-  ChevronLeft, ChevronRight, X, Plus, Pencil, Trash2,
-  MapPin, Users, Trophy, Flag, ClipboardList,
-  CalendarDays, Clock,
-} from "lucide-react";
+import { IconChevronLeft as ChevronLeft, IconChevronRight as ChevronRight, IconX as X, IconPlus as Plus, IconPencil as Pencil, IconTrash as Trash2, IconMapPin as MapPin, IconUsers as Users, IconTrophy as Trophy, IconFlag as Flag, IconClipboardList as ClipboardList, IconCalendarEvent as CalendarDays, IconClock as Clock } from "@tabler/icons-react";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 

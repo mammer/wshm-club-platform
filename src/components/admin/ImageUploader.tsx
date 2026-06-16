@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { Upload, X, Camera } from "lucide-react";
+import { IconUpload as Upload, IconX as X, IconCamera as Camera } from "@tabler/icons-react";
 
 export default function ImageUploader({
   value,

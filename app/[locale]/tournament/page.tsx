@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import TournamentForm from "./TournamentForm";
-import { Calendar, Clock } from "lucide-react";
+import { IconCalendar as Calendar, IconClock as Clock } from "@tabler/icons-react";
 
 export default async function TournamentPage({
   params,

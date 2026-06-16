@@ -4,10 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
 import { printAttendance } from "@/lib/print";
-import {
-  Plus, Trash2, CheckCircle2, XCircle, Users, ChevronRight, X, Printer,
-  ClipboardList, Search,
-} from "lucide-react";
+import { IconPlus as Plus, IconTrash as Trash2, IconCircleCheckFilled as CheckCircle2, IconCircleX as XCircle, IconUsers as Users, IconChevronRight as ChevronRight, IconX as X, IconPrinter as Printer, IconClipboardList as ClipboardList, IconSearch as Search } from "@tabler/icons-react";
 
 type PlayerRecord = {
   id: string;

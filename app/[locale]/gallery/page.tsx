@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { IconX as X, IconChevronLeft as ChevronLeft, IconChevronRight as ChevronRight } from "@tabler/icons-react";
 
 const PAGE_SIZE = 24;
 

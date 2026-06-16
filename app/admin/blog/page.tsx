@@ -12,17 +12,7 @@ const BlogEditor = dynamic(() => import("./BlogEditor"), {
   ),
 });
 import ImageUploader from "@/components/admin/ImageUploader";
-import {
-  Plus,
-  Pencil,
-  Trash2,
-  Eye,
-  EyeOff,
-  Newspaper,
-  ArrowLeft,
-  Search,
-  ExternalLink,
-} from "lucide-react";
+import { IconPlus as Plus, IconPencil as Pencil, IconTrash as Trash2, IconEye as Eye, IconEyeOff as EyeOff, IconNews as Newspaper, IconArrowLeft as ArrowLeft, IconSearch as Search, IconExternalLink as ExternalLink } from "@tabler/icons-react";
 import { useAdminT } from "@/lib/adminT";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";

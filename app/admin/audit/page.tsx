@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useAdminT } from "@/lib/adminT";
-import { Shield, Search, Plus, Pencil, Trash2 } from "lucide-react";
+import { IconShield as Shield, IconSearch as Search, IconPlus as Plus, IconPencil as Pencil, IconTrash as Trash2 } from "@tabler/icons-react";
 
 type AuditLog = {
   id: string;

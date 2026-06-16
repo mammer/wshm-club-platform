@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
-import { ChevronLeft } from "lucide-react";
+import { IconChevronLeft as ChevronLeft } from "@tabler/icons-react";
 import type { Metadata } from "next";
 import DOMPurify from "isomorphic-dompurify";
 

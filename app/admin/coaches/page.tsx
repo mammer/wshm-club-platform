@@ -4,11 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import ImageUploader from "@/components/admin/ImageUploader";
 import { swal } from "@/lib/swal";
 import { useAdminT } from "@/lib/adminT";
-import {
-  Plus, Pencil, Trash2, User, X, Phone, MapPin,
-  CreditCard, Calendar, Award, ChevronRight, Stethoscope,
-  FileText, Star,
-} from "lucide-react";
+import { IconPlus as Plus, IconPencil as Pencil, IconTrash as Trash2, IconUser as User, IconX as X, IconPhone as Phone, IconMapPin as MapPin, IconCreditCard as CreditCard, IconCalendar as Calendar, IconAward as Award, IconChevronRight as ChevronRight, IconStethoscope as Stethoscope, IconFileText as FileText, IconStar as Star } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

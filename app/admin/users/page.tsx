@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
-import { Plus, Trash2, Pencil, X, Users2, Mail, Shield, Key } from "lucide-react";
+import { IconPlus as Plus, IconTrash as Trash2, IconPencil as Pencil, IconX as X, IconUsersGroup as Users2, IconMail as Mail, IconShield as Shield, IconKey as Key } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

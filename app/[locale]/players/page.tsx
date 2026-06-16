@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import { X, User } from "lucide-react";
+import { IconX as X, IconUser as User } from "@tabler/icons-react";
 
 type Player = {
   id: string;

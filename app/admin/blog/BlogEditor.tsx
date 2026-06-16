@@ -4,20 +4,7 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Link from "@tiptap/extension-link";
 import { useState, useCallback } from "react";
-import {
-  Bold,
-  Italic,
-  List,
-  ListOrdered,
-  Heading2,
-  Heading3,
-  Undo,
-  Redo,
-  Quote,
-  Minus,
-  Link as LinkIcon,
-  Unlink,
-} from "lucide-react";
+import { IconBold as Bold, IconItalic as Italic, IconList as List, IconListNumbers as ListOrdered, IconH2 as Heading2, IconH3 as Heading3, IconArrowBackUp as Undo, IconArrowForwardUp as Redo, IconQuote as Quote, IconMinus as Minus, IconLink as LinkIcon, IconUnlink as Unlink } from "@tabler/icons-react";
 
 export default function BlogEditor({
   value,

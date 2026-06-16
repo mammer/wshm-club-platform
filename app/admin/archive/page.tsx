@@ -3,12 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
-import {
-  Upload, Trash2, X, Search, Download, Eye,
-  FileText, FileImage, File, FolderOpen, Plus, Pencil,
-  ChevronDown, ChevronRight, LayoutList, Grid3x3,
-  CalendarDays, User, SortAsc, SortDesc,
-} from "lucide-react";
+import { IconUpload as Upload, IconTrash as Trash2, IconX as X, IconSearch as Search, IconDownload as Download, IconEye as Eye, IconFileText as FileText, IconPhoto as FileImage, IconFile as File, IconFolderOpen as FolderOpen, IconPlus as Plus, IconPencil as Pencil, IconChevronDown as ChevronDown, IconChevronRight as ChevronRight, IconLayoutList as LayoutList, IconGrid3x3 as Grid3x3, IconCalendarEvent as CalendarDays, IconUser as User, IconSortAscending as SortAsc, IconSortDescending as SortDesc } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

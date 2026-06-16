@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useAdminT } from "@/lib/adminT";
-import { Plus, Trash2 } from "lucide-react";
+import { IconPlus as Plus, IconTrash as Trash2 } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

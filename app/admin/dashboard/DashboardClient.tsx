@@ -2,11 +2,7 @@
 
 import { useAdminT } from "@/lib/adminT";
 import Link from "next/link";
-import {
-  Users, CreditCard, CalendarDays, Flag, Trophy,
-  TrendingUp, AlertCircle, CheckCircle, Clock, ChevronRight, Star,
-  Newspaper, Images, FileEdit, Eye,
-} from "lucide-react";
+import { IconUsers as Users, IconCreditCard as CreditCard, IconCalendarEvent as CalendarDays, IconFlag as Flag, IconTrophy as Trophy, IconTrendingUp as TrendingUp, IconAlertCircle as AlertCircle, IconCircleCheck as CheckCircle, IconClock as Clock, IconChevronRight as ChevronRight, IconStar as Star, IconNews as Newspaper, IconPhoto as Images, IconFilePencil as FileEdit, IconEye as Eye } from "@tabler/icons-react";
 import ForbiddenBanner from "@/components/admin/ForbiddenBanner";
 
 export type DashboardData = {

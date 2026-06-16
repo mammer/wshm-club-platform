@@ -11,12 +11,7 @@ import {
   printPlayerIdentity,
   printPlayerContract,
 } from "@/lib/print";
-import {
-  Plus, Pencil, Trash2, User, Search, X, Phone, MapPin,
-  CreditCard, Calendar, Shield, Award, AlertCircle, CheckCircle2,
-  ChevronRight, Stethoscope, Users, FileText, Printer,
-  GitCompare, Target, Flag, Zap,
-} from "lucide-react";
+import { IconPlus as Plus, IconPencil as Pencil, IconTrash as Trash2, IconUser as User, IconSearch as Search, IconX as X, IconPhone as Phone, IconMapPin as MapPin, IconCreditCard as CreditCard, IconCalendar as Calendar, IconShield as Shield, IconAward as Award, IconAlertCircle as AlertCircle, IconCircleCheckFilled as CheckCircle2, IconChevronRight as ChevronRight, IconStethoscope as Stethoscope, IconUsers as Users, IconFileText as FileText, IconPrinter as Printer, IconGitCompare as GitCompare, IconTarget as Target, IconFlag as Flag, IconBolt as Zap } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

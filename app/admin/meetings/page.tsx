@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { swal } from "@/lib/swal";
 import { printMeeting } from "@/lib/print";
 import { useAdminT } from "@/lib/adminT";
-import { Plus, Trash2, Pencil, X, CalendarDays, Printer, MapPin, Users, Clock, Paperclip, FileText, Upload } from "lucide-react";
+import { IconPlus as Plus, IconTrash as Trash2, IconPencil as Pencil, IconX as X, IconCalendarEvent as CalendarDays, IconPrinter as Printer, IconMapPin as MapPin, IconUsers as Users, IconClock as Clock, IconPaperclip as Paperclip, IconFileText as FileText, IconUpload as Upload } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

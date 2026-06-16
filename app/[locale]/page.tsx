@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
-import { ChevronRight, MapPin, Calendar, Star } from "lucide-react";
+import { IconChevronRight as ChevronRight, IconMapPin as MapPin, IconCalendar as Calendar, IconStar as Star } from "@tabler/icons-react";
 
 export default async function HomePage({
   params,

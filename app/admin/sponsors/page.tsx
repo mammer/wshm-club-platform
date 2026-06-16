@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
 import { printSponsorReceipt } from "@/lib/print";
-import { Plus, Trash2, Pencil, Building2, Star, X, Printer } from "lucide-react";
+import { IconPlus as Plus, IconTrash as Trash2, IconPencil as Pencil, IconBuilding as Building2, IconStar as Star, IconX as X, IconPrinter as Printer } from "@tabler/icons-react";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
 

@@ -1,10 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import {
-  Upload, Trash2, Pencil, Eye, X, ChevronLeft, ChevronRight,
-  Camera, FolderOpen, Plus, Check,
-} from "lucide-react";
+import { IconUpload as Upload, IconTrash as Trash2, IconPencil as Pencil, IconEye as Eye, IconX as X, IconChevronLeft as ChevronLeft, IconChevronRight as ChevronRight, IconCamera as Camera, IconFolderOpen as FolderOpen, IconPlus as Plus, IconCheck as Check } from "@tabler/icons-react";
 import { useAdminT } from "@/lib/adminT";
 import { usePagination } from "@/lib/usePagination";
 import Pagination from "@/components/ui/Pagination";
@@ -623,7 +620,7 @@ export default function AdminGalleryPage() {
             </>
           ) : !uploading ? (
             <div className="flex flex-col items-center justify-center py-16 text-gray-400 gap-3">
-              <Camera size={40} strokeWidth={1.2} />
+              <Camera size={40} stroke={1.2} />
               <p className="text-sm">
                 {activeAlbum
                   ? `Aucune photo dans l'album « ${activeAlbum} »`

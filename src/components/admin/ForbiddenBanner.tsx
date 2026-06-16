@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { ShieldOff } from "lucide-react";
+import { IconShieldOff as ShieldOff } from "@tabler/icons-react";
 import { Suspense } from "react";
 
 function Banner() {

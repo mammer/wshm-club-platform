@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import ImageUploader from "@/components/admin/ImageUploader";
 import { useAdminT } from "@/lib/adminT";
 import { swal } from "@/lib/swal";
-import { User, Lock, Save } from "lucide-react";
+import { IconUser as User, IconLock as Lock, IconDeviceFloppy as Save } from "@tabler/icons-react";
 
 export default function AdminProfilePage() {
   const { t, ar } = useAdminT();

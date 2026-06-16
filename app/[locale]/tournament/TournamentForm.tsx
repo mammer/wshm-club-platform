@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  User, Phone, Mail, MapPin, Users, Shield,
-  ChevronRight, ChevronLeft, CheckCircle, Trophy, Building2,
-  Heart, AlertCircle, Lock, FileText,
-} from "lucide-react";
+import { IconUser as User, IconPhone as Phone, IconMail as Mail, IconMapPin as MapPin, IconUsers as Users, IconShield as Shield, IconChevronRight as ChevronRight, IconChevronLeft as ChevronLeft, IconCircleCheck as CheckCircle, IconTrophy as Trophy, IconBuilding as Building2, IconHeart as Heart, IconAlertCircle as AlertCircle, IconLock as Lock, IconFileText as FileText } from "@tabler/icons-react";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
