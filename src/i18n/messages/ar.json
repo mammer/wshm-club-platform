@@ -146,6 +146,20 @@
     "contact_title": "تواصل معنا",
     "contact_location": "الملعب البلدي لمداغ، إقليم بركان",
     "contact_phone": "+212 6XX-XXXXXX",
-    "contact_email": "contact@wshm.ma"
+    "contact_email": "contact@wshm.ma",
+    "nav_history": "التاريخ",
+    "nav_mission": "المهمة",
+    "nav_categories": "الفئات",
+    "nav_org": "التنظيم",
+    "nav_contact": "الاتصال",
+    "stat_years": "سنوات من التأسيس",
+    "stat_players": "لاعب نشيط",
+    "stat_categories": "فئات عمرية",
+    "stat_season": "الموسم الحالي",
+    "leadership_title": "مكتبنا التنفيذي",
+    "leadership_desc": "حوكمة ملتزمة، منتخبة من الأعضاء، في خدمة النادي والمجتمع.",
+    "role_president": "الرئيس",
+    "role_secretary": "الكاتب العام",
+    "players_count": "لاعب نشيط"
   }
 }

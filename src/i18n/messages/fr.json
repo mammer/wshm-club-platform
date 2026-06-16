@@ -146,6 +146,20 @@
     "contact_title": "Nous Contacter",
     "contact_location": "Stade Municipal de Madagh, Province de Berkane",
     "contact_phone": "+212 6XX-XXXXXX",
-    "contact_email": "contact@wshm.ma"
+    "contact_email": "contact@wshm.ma",
+    "nav_history": "Histoire",
+    "nav_mission": "Mission",
+    "nav_categories": "Catégories",
+    "nav_org": "Organisation",
+    "nav_contact": "Contact",
+    "stat_years": "Années d'existence",
+    "stat_players": "Joueurs actifs",
+    "stat_categories": "Catégories d'âge",
+    "stat_season": "Saison en cours",
+    "leadership_title": "Notre Bureau Directeur",
+    "leadership_desc": "Une gouvernance engagée, élue par les membres, au service du club et de la communauté.",
+    "role_president": "Président",
+    "role_secretary": "Secrétaire Général",
+    "players_count": "joueurs actifs"
   }
 }
