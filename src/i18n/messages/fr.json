@@ -71,7 +71,14 @@
     "read_more": "Lire la suite",
     "published": "Publié le",
     "by": "par",
-    "no_posts": "Aucun article disponible."
+    "no_posts": "Aucun article disponible.",
+    "subtitle": "Toute l'actualité du club, des matchs aux coulisses.",
+    "featured": "À la une",
+    "more_articles": "Plus d'articles",
+    "min_read": "min de lecture",
+    "related": "À lire aussi",
+    "copy_link": "Partager",
+    "link_copied": "Lien copié"
   },
   "gallery": {
     "title": "Galerie Photos",
