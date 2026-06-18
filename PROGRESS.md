@@ -2,7 +2,7 @@
 
 Read this at the start of every new conversation to understand the full project state without reading source code.
 
-**Last updated:** 2026-05-26
+**Last updated:** 2026-06-18
 
 ---
 
@@ -213,15 +213,25 @@ Enforced in three places:
 - Cookie consent banner (public site)
 - Bundle analyzer (`ANALYZE=true npm run build`)
 - Seed scripts: `seed-admin.ts`, `seed-archive.ts`, `seed-league.ts`
+- Icon library migrated from `lucide-react` → `@tabler/icons-react` across all 35 TSX files
+- Local test photos: `public/test-photos/` (avatars, gallery, tournament) — replaces external hotlinks
+- Blog page redesigned as magazine layout (hero featured post + grid + reading time + share button)
+- Blog detail page: full-width magazine hero, author initials, reading time, related articles
+- About page (2026-06-18): full rewrite — reorganized sections, richer bilingual content, 7-member bureau directeur prominently displayed (Mostafa Talbi, Mammer Bennasri, Hassan Badaoui, Houmad Abassi, Amr Zraib, Yaboub Yacoubi, Mohammed Oufkir), live player counts per category from DB, dynamic contact info from ClubSettings
+- `src/lib/blogUtils.ts`: shared helpers — `stripHtml`, `excerpt`, `wordCount`, `readingTime`, `initials`
+- `src/components/public/ShareButton.tsx`: clipboard share button (client component)
 
 ---
 
 ## PENDING / TODO
 
-- **Cloudinary integration** — photos and files currently stored on local disk (`public/uploads/`); must move to cloud storage before scaling
+- **DEPLOY (next step)** — ready to push to PlanetHoster; see `DEPLOY.md` for the full checklist
+- **Replace test photos** — `public/test-photos/` are Unsplash placeholders; swap for real club photos before launch
+- **Seed bureau members** — currently hardcoded in `app/[locale]/about/page.tsx`; optionally move to `Member` model via Admin → Members
+- **Cloudinary integration** — photos and files currently stored on local disk (`public/uploads/`); consider moving to cloud storage before scaling
 - **YouTube embed** — no video URL field yet on `Match` or `BlogPost`
 - **GalleryAlbum model** — gallery is grouped by a plain `category` string; no dedicated album entity
-- **Blog excerpt / SEO description** — `BlogPost` has no `excerpt` field; meta description falls back to generic site description
+- **Blog excerpt / SEO description** — `BlogPost` has no `excerpt` field; meta description generated from content
 - **PDF receipt generation** — payments and expenses have no printable receipt export
 - **PWA / offline support** — no service worker or manifest
 - **Player stats UI** — `PlayerStat` model exists and is linked to `Match`, but admin UI for per-match stat entry may be incomplete
