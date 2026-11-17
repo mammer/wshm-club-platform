@@ -12,7 +12,8 @@ export async function requireAuth(): Promise<{ session: S; err?: NextResponse }>
 export async function requireRoles(...roles: string[]): Promise<{ session: S; err?: NextResponse }> {
   const { session, err } = await requireAuth();
   if (err) return { session: null, err };
-  const role = session?.user?.role ?? "ADMIN";
+  const role = session?.user?.role; // no role means no access, never a default one
+  if (!role) return { session: null, err: NextResponse.json({ error: "Forbidden" }, { status: 403 }) };
   if (!roles.includes(role)) return { session: null, err: NextResponse.json({ error: "Forbidden" }, { status: 403 }) };
   return { session };
 }

@@ -20,8 +20,8 @@ sees only its own part of the panel.
 
 ## What it does
 
-- **Team:** players by category (U13 to seniors), coaches, training attendance, match results, league table and player stats.
-- **Club:** members, board meetings with minutes, a calendar and a document archive.
+- **Team:** players by category (minimes, cadets, juniors, seniors), coaches, training attendance, match results, league table and player stats.
+- **Club:** members, board meetings with agenda and decisions, a calendar and a document archive.
 - **Money:** membership fees with a collection rate per season, expenses and sponsors.
 - **Content:** a blog written in a rich-text editor (TipTap) in French and Arabic, an album-based gallery,
   and tournaments with an online registration form that the secretary approves or rejects.
@@ -53,8 +53,8 @@ flowchart LR
   and keeps anyone without a session out of `/admin`.
 - Every API route checks the role it needs on the server (`src/lib/apiAuth.ts`, `src/lib/roles.ts`).
   Hiding a menu item is not enough on its own.
-- Uploads are checked by size, MIME type and the file's first bytes (magic numbers), so a renamed executable is
-  rejected even if its extension says `.jpg`.
+- Uploads are checked by size and MIME type, and images and PDFs also by their first bytes (magic numbers),
+  so a renamed executable is rejected even if its extension says `.jpg`.
 - The public tournament registration form is rate-limited per IP (in memory, which is enough for a single
   process on shared hosting).
 - Admin changes are written to an audit log with who did what and when.
@@ -85,8 +85,10 @@ checklist I worked through is in [docs/security-checklist.md](docs/security-chec
 ## What I learned
 
 - Arabic support is more than translation files. Layout direction, number formatting, fonts and icons that
-  point "forward" all change, so I built RTL in from the first page instead of adding it at the end.
-- Role checks have to live on the server, per route. The sidebar only reflects them.
+  point "forward" all change with the language.
+- Role checks have to live on the server, per route. The sidebar only reflects them. While preparing this repo
+  I found that the calendar endpoint had no check at all, and that a user without a role fell back to ADMIN.
+  Both are fixed in the history.
 - `prisma db push` is convenient until someone runs `migrate deploy` on a fresh database. Several tables existed
   only in the schema and not in any migration, and I only caught it when I rebuilt the project from scratch
   (fixed in the history, commit "add the migration that was missing").

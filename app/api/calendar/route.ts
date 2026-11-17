@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { requireAuth } from "@/lib/apiAuth";
 
 const CAT_COLOR: Record<string, string> = {
   SENIORS: "bg-blue-500", JUNIORS: "bg-green-500",
@@ -7,6 +8,9 @@ const CAT_COLOR: Record<string, string> = {
 };
 
 export async function GET(req: NextRequest) {
+  const { err } = await requireAuth();
+  if (err) return err;
+
   const { searchParams } = req.nextUrl;
   const startParam = searchParams.get("start");
   const endParam = searchParams.get("end");

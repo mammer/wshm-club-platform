@@ -32,7 +32,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   callbacks: {
     async jwt({ token, user, trigger, session: updSession }) {
       if (user) {
-        token.role = (user as { role?: string }).role ?? "ADMIN";
+        token.role = (user as { role?: string }).role; // never assume a role
         token.picture = (user as { image?: string | null }).image ?? null;
       }
       // Handle session update (called when useSession update() is invoked)
