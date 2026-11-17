@@ -1,6 +1,9 @@
 import { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 
+// Built per request so new posts show up without a rebuild, and builds do not need a database.
+export const dynamic = "force-dynamic";
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wshm.ma";
 const locales = ["fr", "ar"] as const;
 
