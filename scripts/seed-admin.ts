@@ -1,14 +1,11 @@
 /**
  * Creates the first admin account in the database.
  *
- * Usage (local SQLite):
- *   npx ts-node --compiler-options '{"module":"commonjs"}' scripts/seed-admin.ts
+ * Usage:
+ *   ADMIN_EMAIL=you@example.org ADMIN_PASSWORD='a long passphrase' npx tsx scripts/seed-admin.ts
  *
- * Usage (production MySQL — run on PlanetHoster terminal after deploy):
- *   DATABASE_URL="mysql://user:pass@localhost/wshm_db" \
- *   npx ts-node --compiler-options '{"module":"commonjs"}' scripts/seed-admin.ts
- *
- * Change the values below before running.
+ * Against production MySQL, run it on the server with DATABASE_URL set.
+ * Credentials come from the environment so no password is ever written into the repository.
  */
 
 import { PrismaClient } from "../src/generated/prisma";
@@ -16,12 +13,17 @@ import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
 
-const ADMIN_EMAIL    = "admin@wshm.ma";
+const ADMIN_EMAIL    = process.env.ADMIN_EMAIL ?? "";
 const ADMIN_NAME     = "Administrateur WSHM";
-const ADMIN_PASSWORD = "ChangeMe123!";   // ← change this before running
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD ?? "";
 const ADMIN_ROLE     = "ADMIN";
 
 async function main() {
+  if (!ADMIN_EMAIL || ADMIN_PASSWORD.length < 12) {
+    console.error("Set ADMIN_EMAIL and ADMIN_PASSWORD (12+ characters) in the environment.");
+    process.exit(1);
+  }
+
   const existing = await prisma.adminUser.findUnique({ where: { email: ADMIN_EMAIL } });
 
   if (existing) {
